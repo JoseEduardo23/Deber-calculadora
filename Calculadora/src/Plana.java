@@ -76,7 +76,7 @@ public class Plana {
                 if (isValidInput(Numero1.getText()) && isValidInput(Numero2.getText())) {
                     double num1 = Double.parseDouble(Numero1.getText().trim());
                     double num2 = Double.parseDouble(Numero2.getText().trim());
-                    if (num2 == 0) {
+                    if (num2 == 0 || num1 ==0) {
                         JOptionPane.showMessageDialog(null, "No se puede dividir entre cero.");
                     } else {
                         double resultado = num1 / num2;
